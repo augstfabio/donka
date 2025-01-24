@@ -1,0 +1,77 @@
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40vh; /* Altura menor */
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    max-width: 500px;
+    min-height: 45vh;
+    padding: 2em;
+    background: linear-gradient(135deg, #1a478a, #1c5ca9); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.form h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding-bottom: 1.5em;
+    align-self: center;
+    text-align: center;
+}
+
+.stepsProgress {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ffffff55; 
+}
+
+.steps {
+    font-weight: 700;
+    background-color: white;
+    color: #777777;
+    font-size: 12px; 
+    border-radius: 50%;
+    width: 24px; 
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.steps:hover {
+    background-color: #38b6ff; 
+    color: white;
+}
+
+.active {
+    background-color: #38b6ff;
+    color: white;
+    box-shadow: 0 0 10px rgba(56, 182, 255, 0.6); 
+}
+
+@media (max-width: 1500px) {
+    .formContainer {
+        width: 80%;
+        padding: 2em;
+    }
+    .form h1 {
+        font-size: 1.5rem;
+        padding-bottom: 1em;
+    }
+}

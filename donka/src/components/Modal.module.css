@@ -1,0 +1,92 @@
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal {
+    background-color: #1a478a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    max-width: 300px;
+    width: 90%;
+    animation: slideIn 0.3s ease-out;
+}
+
+.modal strong {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    display: block;
+    width: 90%;
+    color: #f7f7f7;;
+    border-bottom: solid 1px #f7f7f7;
+}
+
+.modal p {
+    font-size: 1rem;
+    color: #f7f7f7;
+    margin: 10px 0 20px;
+    width: 90%;
+}
+
+.btns {
+
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-top: 2em;
+    width: 90%;
+
+}
+
+.cancelBtn {
+    background-color: #002352;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.cancelBtn:hover {
+    background-color: #e6e3e3;
+    color: #002352;
+}
+
+.okBtn {
+    background-color: #38b6ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 1px #38b6ff
+}
+
+.okBtn:hover {
+    background-color: #f7f7f7;
+    color: #38b6ff;
+    border: solid 1px #f7f7f7;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

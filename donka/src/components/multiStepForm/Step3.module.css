@@ -1,0 +1,151 @@
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(5%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 100%;
+    margin-top: 1em;
+    height: 45vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container h2 {
+    color: #f7f7f7;
+    font-weight: 500;
+    margin: 0;
+    font-size: 25px;
+}
+
+.firstInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 1em 0;
+}
+
+.container span {
+    margin: 1em 0;
+    color: #f7f7f7;
+    font-weight: 600;
+}
+
+.nascimento,
+.sexo,
+.castrado {
+    display: flex;
+    flex-direction: column;
+}
+
+.nascimento {
+    margin:0 1.5em;
+}
+
+.nascimento input {
+    appearance: none;
+    background: #1a478a;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 13px 12px;
+    font-size: 12px;
+    color: #f7f7f7;
+    width: 90%;
+
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.nascimento input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    color: #f7f7f7;
+    filter: invert(0.5);
+    margin-right: 10px;
+}
+
+.topSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.topSide select {
+    padding: 0;
+    background-color: #1a478a;
+    border: solid 1px #c0bfbf;
+    border-radius: 5px;
+    color: #f7f7f7;
+    width: 100%;
+    padding: 1em;
+    font-size: 13px;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+
+.btn button {
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background: #002352;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    align-self: flex-end;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+
+.slideEnter {
+    animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-height: 40vh;
+    }
+
+    .nascimento {
+        width: 100%;
+    }
+
+    .nascimento input {
+        width: 88%;
+    }
+
+    .container h2 {
+        color: #f7f7f7;
+        font-weight: 500;
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .topSide {
+        flex-direction: column;
+    }
+
+    .firstInfo {
+        width: 100%;
+
+        align-items: start;
+    }
+}

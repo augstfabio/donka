@@ -1,0 +1,42 @@
+.card {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border: solid 1px #f7f7f7;
+    background-color:transparent;
+    border-radius: 50px;
+    position: relative;
+    position: relative;
+    transition: all .3s;
+   
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card span {
+    font-size: 30px;
+    color: #f7f7f7;
+
+}
+
+.card img {
+    height: 25px;
+}
+
+
+.card:hover{
+    border: solid 1px #1a478a;
+    background-color: #1a478a;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+}

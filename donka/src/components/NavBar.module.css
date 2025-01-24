@@ -1,0 +1,120 @@
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.logoText{
+    height: 25px;
+    cursor: pointer;
+}
+.logoImg {
+    height: 60px;
+}
+.imgProfile {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.options {
+    position: relative;
+}
+
+.dropDown {
+    position: absolute;
+    right: 0;
+    width: 16em;
+    padding: 1em 0 0 1em;
+    background-color: #1a478a;
+    color:#f7f7f7;
+    border-radius: 10px;
+    z-index: 100;
+    animation: appear .1s ease-in;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);}
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profileInfo {
+    display: flex;
+    gap: 10px;
+}
+
+.Texts {
+    align-items: center;
+}
+
+.profileInfo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 90px;
+
+}
+
+.profileInfo p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.profileInfo span {
+    font-size: 11px;
+    
+}
+
+.dropDown a {
+    color:#f7f7f7;
+}
+.dropDown ul {
+    margin: 2em 0;
+}
+.dropDown ul li {
+    margin: 1em;
+    font-weight: 500;
+}
+.dropDown ul span {
+    color:#e1008a;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .dropDown {
+        position: absolute;
+        right: 0;
+        padding: 0;
+        padding: 1em;
+        background-color: #1a478a;
+        color:#f7f7f7;
+        border-radius: 10px;
+        z-index: 100;
+    }
+    .dropDown ul {
+        margin: 2em 0 0 0;
+    }
+    .dropDown ul li {
+        margin: 1em 0;
+        font-weight: 500;
+    }
+    
+}

@@ -1,0 +1,156 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texts {
+    width: 80%;
+    margin: 1em 0 2em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 1.8rem;
+    color: #f7f7f7;
+
+}
+
+.pink {
+    color: #e1008a;
+}
+
+.blue {
+    color: #38b6ff;
+}
+
+.banner img {
+    width: 150px;
+    margin: 2em;
+}
+
+.cardsSection {
+    width: 90%;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.petsContainer {
+    width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 2em;
+    align-self: center;
+
+}
+
+.cardsSection h2 {
+    font-size: 1.3rem;
+    margin: 1em 0;
+    color: #f7f7f7;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+}
+
+.cardCreatePet {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loadingContainer {
+    width: 40%;
+    height: 250px;
+}
+
+@media (max-width: 1150px) {
+    .texts {
+        align-self: center;
+        flex-direction: column;
+        margin-top: 0;
+        margin: 2em 0;
+        width: 90%;
+        align-items: flex-start;
+        text-align: start;
+        
+       
+    }
+    
+    .banner {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3em 0;
+        display: none;
+    }
+
+    .banner img {
+        width: 100px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 869px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardsSection {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 1em 0 2em 0;
+    }
+
+    .petsContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 2em;
+        align-self: center;
+    }
+
+    .card {
+        width: 150px;
+        height: 200px;
+    }
+
+    .cardCreatePet {
+        width: 150px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardsSection h2 {
+        font-size: 1.3rem;
+        margin: 0;
+        color: #f7f7f7;
+    }
+
+    .text {
+        font-size: 1.4rem;
+      
+        margin-bottom: 1em;
+    }
+}

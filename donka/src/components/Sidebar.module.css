@@ -1,0 +1,76 @@
+
+.sidebarContainer {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+}
+.sidebar {
+    width: 70px;
+    background-color:  #1a478a;
+    border-radius: 10px 0 0 10px;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    transition: width 0.3s ease; 
+    
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.sidebarContainer.expanded .sidebar {
+    width: 250px; 
+}
+
+
+.toggleButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 6px;
+    color: #f7f7f7;
+    margin-left: 10px;
+    font-size: 30px;
+    
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.menuItem span {
+    margin-left: 10px; 
+    white-space: nowrap; 
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+
+.sidebarContainer.expanded .menuItem span {
+    opacity: 1;
+}
+
+.menuItem:hover {
+    background-color: #38b6ff;
+    color: #f7f7f7;
+    border-radius: 4px;
+}

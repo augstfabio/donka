@@ -1,0 +1,99 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  
+}
+
+.modalContent {
+    background-color: #163d73;
+    padding: 20px;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modalImage {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input[type="text"] {
+    width: 200px;
+    height: 10px;
+    background-color: transparent;
+    color: #f7f7f7;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 1em 0;
+    padding: 10px;
+}
+
+.form input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.form input[type="date"] {
+    width: 200px;
+    height: 10px;
+    background-color: transparent;
+    color: #f7f7f7;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 1em 0;
+    padding: 10px;
+}
+
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.closeButton {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btns button {
+    width: 100px !important;
+    height: 30px;
+    background-color: #002352;;
+    padding: 0 10px !important;
+    border-radius: 10px!important;
+}
+.btns button:hover{
+    background-color: #011633 !important;
+}
+.deletePost{
+    width: 110px !important;
+    height: 30px !important;
+    font-size: 13px !important;
+    background-color: #b30e0e !important;
+    padding: 0 10px !important;
+    border-radius: 5px!important;
+}
+@media (max-width: 780px) {}

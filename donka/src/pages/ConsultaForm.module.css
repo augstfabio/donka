@@ -1,0 +1,159 @@
+.consultaForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.consultaForm h2{
+    color: #f7f7f7;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #1a478a;
+    color: #f7f7f7;
+    text-align: left;
+}
+
+.formContainer input,
+.formContainer textarea,
+.formContainer select {
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #f7f7f7;
+    border-bottom: solid 1px #f7f7f7;
+}
+.formContainer select {
+    border: solid 1px #f7f7f7;
+    border-radius: 5px;
+}
+
+.formContainer input[type="file"] {
+    display: none;
+}
+
+.formContainer textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.formContainer button {
+    padding: 12px;
+    background-color: #002352;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.formContainer input::placeholder{
+    color: #f7f7f7;
+}
+.formContainer input[type="date"], .formContainer select{
+    color: #f7f7f7;
+}
+.formContainer textarea::placeholder{
+    color: #f7f7f7;
+}
+.formContainer select{
+    background-color:#1a478a;
+}
+.formContainer button:hover {
+    background-color: #023475;
+}
+
+.formContainer input[type="file"] {
+    margin-top: 10px;
+}
+
+.previewContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  
+    width: 400px;
+    gap: 30px;
+}
+.imageInput{
+    border: solid 1px #f7f7f7;
+    color: #f7f7f7;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size:30px;
+    height: 70px;
+    width: 70px;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: all .1 s ease-in;
+}
+.imageInput:hover{
+    background-color: #002352;
+    border: solid 1px #002352;
+}
+.imagePreview {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 1em;
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+
+.removeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5%;
+    width: 100px;
+    background-color: rgba(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background-color: red;
+}
+
+.legendInput {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}

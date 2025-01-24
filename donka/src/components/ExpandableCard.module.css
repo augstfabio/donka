@@ -1,0 +1,101 @@
+.card {
+  background-color: #1a478a;
+  color: white;
+  width: 280px;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cardClosed {
+  max-height: 60px;
+  opacity: 0.7;
+}
+
+.cardExpanded {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.header {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.datePrevius {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 0.5rem;
+}
+
+.datePrevius svg {
+  font-size: 0.9rem;
+  color: #05ff61;
+}
+
+.title {
+  text-align: start;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-top: 1.3em;
+  gap: 5px;
+}
+
+.title svg {
+  font-size: 25px;
+}
+
+.toggleButton {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 25px !important;
+  cursor: pointer;
+  margin:.7em 1em 0 0;
+}
+
+.content {
+  margin: 0 20px;
+  overflow: hidden;
+  transform-origin: top;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardExpanded .content {
+  opacity: 1;
+}
+
+.editButton {
+  margin: 10px 0 !important;
+  width: 100px !important;
+  background-color: #0e2c5a !important;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 13px !important;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.content p{
+  font-size: 13px;
+}
+.checked svg {
+  color: #05ff61;
+}
+
+.noChecked svg {
+  color: orange !important;
+}

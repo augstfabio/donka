@@ -1,0 +1,126 @@
+.editProfilePage {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.profileContainer {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.profileInfo {
+    font-size: .8rem;
+    color: #f7f7f7;
+}
+
+.profileInfo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.profileContainer form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: start;
+    width: 100%;;
+}
+
+.field {
+    width: 100%;
+    margin: 1em 0;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    color: red;
+    font-size: 13px;
+}
+.sucess{
+    color: green;
+    font-size: 13px;
+}
+.field span {
+    color: #f7f7f7;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px; 
+}
+
+.field input {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #f7f7f7;
+    border-bottom: solid 1px #f7f7f7;
+    font-size: 14px;
+    width: 80%; 
+}
+.field input::placeholder{
+    color: #f7f7f7;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 8px;
+    background-color: #38b6ff;
+    color: #f7f7f7;
+    border: none;
+    font-size: 13px;
+    margin: .6em 0;
+    width: 150px; 
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all .2s ease-in;
+}
+.btn:hover {
+    background-color: #e6e3e3;
+    color: #002352;
+}
+.editSection input[type="file"] {
+    margin-top: 1em;
+    background-color: transparent;
+    display: block;
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px dashed #ccc; 
+    border-radius: 8px;
+    cursor: pointer;
+    color: #f7f7f7;
+    transition: border-color 0.3s;
+    font-size: 13px;
+}
+.editSection input[type="file"]::-webkit-file-upload-button {
+    appearance: none; 
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    display: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.editSection input[type="file"]:hover {
+    border-color: #007bff; 
+}
+.aviso{
+    margin: 0 0 1em;
+    font-size: 13px;
+    color: #f7f7f7;
+
+}
+
+@media (max-width: 600px) {
+    .profileContainer {
+        width: 90%;
+    }
+}

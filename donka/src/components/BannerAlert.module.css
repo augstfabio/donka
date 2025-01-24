@@ -1,0 +1,54 @@
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .alert {
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: slideDown 0.5s ease-out, slideUp 0.5s ease-in 2.5s forwards;
+    font-size: 13px;
+  }
+  
+  .info {
+    background-color: #d9edf7;
+    color: #31708f;
+  }
+  
+  .success {
+    background-color: #dff0d8;
+    color: #3c763d;
+  }
+  
+  .warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+  }
+  
+  .error {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  

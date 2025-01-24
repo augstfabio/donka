@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha - DoNca</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #444444;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #4A90E2;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-bottom: 4px solid #357ABD;
+        }
+        .body {
+            padding: 30px;
+            text-align: left;
+            line-height: 1.7;
+            font-size: 16px;
+            color: #555555;
+            text-align: center;
+        }
+        .body p {
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #357ABD;
+            transform: translateY(-2px);
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #888888;
+            background-color: #f8f8f8;
+        }
+        .footer a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>DoNca</h1>
+            <p>Recuperação de Senha</p>
+        </div>
+        <div class="body">
+            <p>Você solicitou a redefinição de senha para sua conta.</p>
+            <p>Para prosseguir, clique no botão abaixo:</p>
+            <a href="%LINK%" class="button">Redefinir Minha Senha</a>
+            <p>Este link expirará em 24 horas.</p>
+        </div>
+        <div class="footer">
+            <p>Se você não solicitou a redefinição de senha, ignore este e-mail.</p>
+            <p>Obrigado por utilizar o <strong>DoNca</strong></p>
+        </div>
+    </div>
+</body>
+</html>
